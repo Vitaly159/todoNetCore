@@ -24,7 +24,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Todo"
+                "$ref": "#/components/schemas/TodoItem"
               }
             }
           },
@@ -44,7 +44,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Todo"
+                "$ref": "#/components/schemas/TodoItem"
               }
             }
           },
@@ -68,8 +68,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -89,8 +89,8 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int32"
+              "type": "string",
+              "format": "uuid"
             }
           }
         ],
@@ -104,19 +104,36 @@
   },
   "components": {
     "schemas": {
-      "Todo": {
+      "TodoItem": {
         "type": "object",
         "properties": {
           "id": {
-            "type": "integer",
-            "format": "int32"
+            "type": "string",
+            "format": "uuid"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "deletedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           },
           "title": {
             "type": "string",
             "nullable": true
           },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
           "isDone": {
             "type": "boolean"
+          },
+          "userId": {
+            "type": "string",
+            "format": "uuid"
           }
         },
         "additionalProperties": false
