@@ -24,8 +24,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "todo",
-        "Type": "Todo.Models.TodoItem",
+        "Name": "dto",
+        "Type": "Todo.Dtos.CreateTodoItemDto",
         "IsRequired": true
       }
     ],

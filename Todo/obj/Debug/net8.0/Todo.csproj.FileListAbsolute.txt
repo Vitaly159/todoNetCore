@@ -26,7 +26,6 @@ C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\obj\Debug\net8
 C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\obj\Debug\net8.0\Todo.csproj.Up2Date
 C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\obj\Debug\net8.0\Todo.dll
 C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\obj\Debug\net8.0\refint\Todo.dll
@@ -138,3 +137,17 @@ C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8
 C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\libman.json
 C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Npgsql.dll
 C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Serilog.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\Виталий\Desktop\Разработка\C#\Todo\Todo\bin\Debug\net8.0\Serilog.Sinks.File.dll

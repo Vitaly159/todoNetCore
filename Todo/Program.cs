@@ -2,6 +2,7 @@
 
 
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using Todo.Data;
 using Todo.Endpoints;
 
@@ -15,9 +16,16 @@ public class Program
 
         //builder.Services.AddControllers();
 
-        //builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddEndpointsApiExplorer();
 
-        builder.Services.AddDbContext<ApplicationDataContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
+        //Db Context EF Core
+        builder.Services.AddDbContext<ApplicationDataContext>(options =>
+            options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
+
+        // Logging
+        builder.Services.AddLogging();
+        builder.Host.UseSerilog((ctx, lc) =>
+            lc.ReadFrom.Configuration(ctx.Configuration));
 
         builder.Services.AddSwaggerGen();
 
