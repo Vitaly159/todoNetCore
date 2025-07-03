@@ -4,6 +4,9 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>2bdcc4be-877a-43b8-97b5-149625b9dc38</UserSecretsId>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <!-- <DockerfileRunArguments> -v "$(APPDATA)\Microsoft\UserSecrets:C:\Users\ContainerAdministrator\AppData\Roaming\Microsoft\UserSecrets:ro" -v "$(APPDATA)\ASP.NET\Https:C:\Users\ContainerAdministrator\AppData\Roaming\ASP.NET\Https:ro"</DockerfileRunArguments> -->
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +17,8 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1-Preview.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 

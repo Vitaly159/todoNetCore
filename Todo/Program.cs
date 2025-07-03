@@ -17,7 +17,7 @@ public class Program
 
         //builder.Services.AddEndpointsApiExplorer();
 
-        builder.Services.AddDbContext<ApplicationDataContext>(options => options.UseInMemoryDatabase("InMemory"));
+        builder.Services.AddDbContext<ApplicationDataContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("Default")));
 
         builder.Services.AddSwaggerGen();
 
