@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Todo.Data;
 using Todo.Endpoints;
+using Todo.Services;
 
 namespace Todo;
 
@@ -36,6 +37,12 @@ public class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
+
+        //Automapper
+        builder.Services.AddAutoMapper(typeof(TodoMappingProfile));
+
+        builder.Services.AddScoped<IDateTimeService, DateTimeService>();
+        builder.Services.AddScoped<ITodoService, TodoService>();
 
         //app.UseHttpsRedirection();
 
