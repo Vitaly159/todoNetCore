@@ -1,10 +1,13 @@
 
 
 
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Serilog;
 using Todo.Data;
 using Todo.Endpoints;
+using Todo.Mapping;
 using Todo.Services;
 
 namespace Todo;
@@ -39,7 +42,11 @@ public class Program
         }
 
         //Automapper
+
         builder.Services.AddAutoMapper(typeof(TodoMappingProfile));
+
+        //Validation
+        builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 
         builder.Services.AddScoped<IDateTimeService, DateTimeService>();
         builder.Services.AddScoped<ITodoService, TodoService>();
